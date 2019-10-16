@@ -8,6 +8,7 @@ import { PeliculasComponent } from '../Componentes/peliculas/peliculas.component
 import { PersonajesComponent } from '../Componentes/personajes/personajes.component';
 import { PlanetasComponent } from '../Componentes/planetas/planetas.component';
 import { VehiculosComponent } from '../Componentes/vehiculos/vehiculos.component';
+import { LoginComponent } from '../Componentes/login/login.component';
 
 
 const appRoutes: Routes = [
@@ -18,6 +19,7 @@ const appRoutes: Routes = [
   { path: 'personajes', component: PersonajesComponent},
   { path: 'planetas', component: PlanetasComponent},
   { path: 'vehiculos', component: VehiculosComponent},
+  { path: 'login', component:LoginComponent},
   {
     path: '',
     redirectTo: 'home',
