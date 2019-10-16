@@ -1,6 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Observable } from 'rxjs';
-import { PersonajesApiService } from './personajes-api.services';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-personajes',
@@ -9,13 +7,9 @@ import { PersonajesApiService } from './personajes-api.services';
 })
 export class PersonajesComponent implements OnInit {
 
-  constructor(private personajeSvc: PersonajesApiService) { }
-  allPersonajes: Observable<any>;
+  constructor() { }
 
   ngOnInit() {
-    this.getPersonajes();
   }
-  getPersonajes() {
-    this.allPersonajes = this.personajeSvc.getAllPersonajes();
-  }
+
 }
