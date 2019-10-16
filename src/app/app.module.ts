@@ -23,7 +23,9 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterModule } from '@angular/router';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { HomeComponent } from './Componentes/home/home.component';
+
 import { LoginComponent } from './Componentes/login/login.component';
+
 
 //modulos para inicio de session con google
 
@@ -41,7 +43,6 @@ let config = new AuthServiceConfig([
 export function provideConfig() {
   return config;
 }
-
 
 
 @NgModule({

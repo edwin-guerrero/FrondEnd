@@ -1,4 +1,4 @@
-<p>login works!</p>
+
 <div>
     <main class="container mt-5">
         <div class="col-md-6">
@@ -13,12 +13,13 @@
                     Cerrar Sesion
                 </button>
         </div>
-        <div class="col-md-6" *ngIf="user" >
+        <div  *ngIf="user" >
             <p>Bienvenido</p>
+            <h4>{{ user.name }}</h4>
+            <p>{{ user.mail }}</p>
             <img src="{{ user.photoUrl }}" >
-            <div>
-                <h4>{{ user.name }}</h4>
-                <p>{{ user.mail }}</p>
+        <div>
+
             </div>
         </div>
 

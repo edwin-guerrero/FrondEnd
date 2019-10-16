@@ -1,1 +1,8 @@
-<p>personajes works!</p>
+<div fxFlex fxLayout="column">
+    <div fxLayout="row wrap">
+      <div fxFlex="25" fxFlex.md="33" fxFlex.sm="50" fxFlex.xs="100" fxLayout="column" *ngFor="let personaje of allPersonajes | async"
+        style="padding: 5px;">
+        <app-personaje [personaje] = "personaje" > </app-personaje>
+      </div>
+    </div>
+  </div>
