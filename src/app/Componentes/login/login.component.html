@@ -1,0 +1,26 @@
+<p>login works!</p>
+<div>
+    <main class="container mt-5">
+        <div class="col-md-6">
+            <button mat-raised-button (click)="signInWithGoogle()" >
+            <i class="fa fa -google">
+                    Iniciar Sesion
+            </i>
+            </button>
+        </div>
+        <div class="col-md-6">
+                <button mat-raised-button (click)="signOut()" >
+                    Cerrar Sesion
+                </button>
+        </div>
+        <div class="col-md-6" *ngIf="user" >
+            <p>Bienvenido</p>
+            <img src="{{ user.photoUrl }}" >
+            <div>
+                <h4>{{ user.name }}</h4>
+                <p>{{ user.mail }}</p>
+            </div>
+        </div>
+
+    </main>
+</div>
